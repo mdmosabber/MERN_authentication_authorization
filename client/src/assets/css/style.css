@@ -1,0 +1,90 @@
+:root {
+    --bg1: #1a518b8f;
+    --bg2: #1a518b81;    
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.circle-form {
+    color: #fff;
+    background-image: linear-gradient(to right, var(--bg1) 50%, var(--bg2)50% );
+    height: 100vh;
+    display: grid;
+    place-items: center;
+}
+
+.form-wrapper {
+    background-color: rgba(255, 255, 255, 0.15);
+    height: 100vh;
+    width: 100vh;
+    border-radius: 50%;
+    box-sizing: border-box;
+    padding: 2.2rem;
+}
+.circle {
+    background-color: #f9f9f925;
+    height: 100%;
+    border-radius: 50%;
+    text-align: center;
+    display: grid;
+    place-items: center;
+    box-shadow: -4px -4px 30px #e6e1e1, 4px 4px 30px #e6e1e1;
+    border: 2px solid rgb(235, 231, 231)
+}
+.circle form {
+    box-sizing: border-box;
+}
+.circle .sign-title {
+    font-size: 2rem;
+}
+.sign-text {
+    padding-bottom: 0.7em;
+    border-bottom: 3px solid var(--bg2);
+    display: inline-block;
+}
+.user, .pass, .btn {
+    padding: 1rem 1.5rem;
+    margin-top: 1rem;
+    border-radius: 50px;
+    width: 100%;
+    outline: none;
+    border: none;
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+    background-color: transparent;   
+}
+.user, .pass {
+    box-shadow: -5px -5px 5px #7f9dbedb, 5px 5px 5px #d6d8db70;
+}
+.circle .flex {
+    display: flex;
+    justify-content: center;
+    gap: 3rem;
+    margin: 1rem 0;
+}
+
+.circle .btn {
+    background-color: var(--bg2);
+    border: none;
+    color: #fff;
+    margin: 1rem 0;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.circle a {
+    color: rgb(75, 71, 71);
+}
+.circle .btn:hover {
+    background-color: var(--bg1);
+}
+
+@media (max-width: 630px){
+    .form-wrapper {
+        height: 100vh;
+        width: 100vw;
+    }
+}
